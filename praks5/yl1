@@ -1,11 +1,13 @@
 #!/bin/bash
-#10 numbri välja printimine komadega ja viimane ilma komata
+#10-st numbrist paaris arvud välja printimine.
 
-for ((i=0; i<=10; i++))
+summa=0
+for i in {1..111}
 do
-	if [ $i -eq 10 ] ; then
-		echo  $i
-	else
-	echo -n "$i, "
+	jaak=$(($i%2))
+	if [ $jaak -eq 1 ] ; then
+	echo -n "$i "
 	fi
-done 
+done
+
+echo
