@@ -1,0 +1,13 @@
+#!/bin/bash
+for i in {1..5} #5*
+do
+	echo -n "$i"
+	echo -n ". "
+	for i in {1..3}
+	do
+		echo -n "*"
+	done
+	echo
+done
+
+#lõpp
