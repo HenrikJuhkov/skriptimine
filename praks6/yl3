@@ -1,0 +1,23 @@
+#!/bin/bash
+echo -e "sisesta ridade arv: \c"
+read ridade arv
+echo -e " sisesta tarnide arv reas: \c"
+read tarnide arc
+for ((r=1; r<=$ridade_arv; r++))
+do
+	echo -n "$r"
+	if [$r -eq 1 -o $r -eq $ridade_arv ]; then
+		for ((t=1; t<=$tarnide_arv; t++))
+		do
+			echo -n "* "
+		done
+	else
+		echo -n "* "
+		for (( t=2; t<$tarnide_arv; t++))
+		do
+			echo -n "  "
+		done
+		echo -n "* "
+	fi
+	echo ""
+done
