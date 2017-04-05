@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+#kolmnurk paremalt vasakule
+#
+for((r=6; r>1; r--))
+do
+#trükime reanumbri ilma reavahetuseta
+  # echo -n "$r"
+  for((v=1; v<=$ (($r+1)) ; v++))
+  do
+	# tärnid
+	echo -n "* "
+  done
+  #kui rida lõppeb - reavahetus
+  echo
+done
